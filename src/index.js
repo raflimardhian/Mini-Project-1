@@ -70,6 +70,6 @@ app.use('/category', categoryRoutes({categoryController, authMiddleware, checkRo
 app.use(errorHandler);
 module.exports = app
 
-app.listen(PORT, ()=>{
-    console.log(`Server listening to: ${PORT}`);
-})
+// app.listen(PORT, ()=>{
+//     console.log(`Server listening to: ${PORT}`);
+// })
