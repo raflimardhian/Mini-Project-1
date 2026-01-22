@@ -15,9 +15,9 @@ function createProductRepository({db}){
                         lte: new Date(`${endDate}T23:59:59.999Z`)
                     }}),
                     deletedAt:null,
-                    orderBy:{
-                        createdAt:'desc'
-                    }
+                },
+                orderBy:{
+                    createdAt:'asc'
                 }
             })
         },
