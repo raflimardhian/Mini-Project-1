@@ -22,7 +22,6 @@
   },
   "homepage": "https://github.com/dns-js/Mini-Project-1-Rafli#readme",
   "dependencies": {
-    "@prisma/adapter-mariadb": "^7.2.0",
     "@prisma/client": "^7.2.0",
     "bcrypt": "^6.0.0",
     "cookie-parser": "^1.4.7",
