@@ -5,6 +5,8 @@ const REDIS_URL = process.env.REDIS_URL || 'redis://localhost:6379';
 const client = createClient({
     url: REDIS_URL,
     socket: {
+        tls:true,
+        connectTimeout:10000,
         reconnectStrategy: (retries) => {
             if (retries > 10) return new Error("Redis reconnection failed");
             return Math.min(retries * 50, 2000);
