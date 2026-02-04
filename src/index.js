@@ -66,6 +66,11 @@ app.use('/auth', authRoutes({authController}))
 app.use('/users', userRoutes({userController}))
 app.use('/category', categoryRoutes({categoryController, authMiddleware, checkRole}))
 
+app.get('/', (req, res)=>{
+    res.json({
+        message:"Hello"
+    })
+})
 
 app.use(errorHandler);
 module.exports = app
